@@ -1,0 +1,16 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<ion-title>{{movie.title}}</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content class="page-item-detail">
+	<ion-card>
+		<div class="detail-image" [style.background-image]="'url(' + movie.backdropWithUrl + ')'"></div>
+		<ion-card-content class="detail-content">
+			<ion-card-title style="color:white;">
+				{{movie.title}}
+			</ion-card-title>
+			<p style="color:white;">{{movie.overview}}</p>
+		</ion-card-content>
+	</ion-card>
+</ion-content>
